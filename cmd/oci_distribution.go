@@ -3,7 +3,7 @@
 // Copyright (c) 2023 HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package main
+package cmd
 
 // This file deals with our cross-cutting concerns relating to the OCI Distribution
 // protocol, shared across both the provider and module installers, and potentially

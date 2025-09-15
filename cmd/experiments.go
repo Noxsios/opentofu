@@ -3,7 +3,7 @@
 // Copyright (c) 2023 HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-package main
+package cmd
 
 // experimentsAllowed can be set to any non-empty string using Go linker
 // arguments in order to enable the use of experimental features for a

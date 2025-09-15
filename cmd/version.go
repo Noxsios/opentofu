@@ -3,14 +3,12 @@
 // Copyright (c) 2023 HashiCorp, Inc.
 // SPDX-License-Identifier: MPL-2.0
 
-//go:build windows
-// +build windows
-
-package main
+package cmd
 
 import (
-	"os"
+	"github.com/opentofu/opentofu/version"
 )
 
-var ignoreSignals = []os.Signal{os.Interrupt}
-var forwardSignals []os.Signal
+var Version = version.Version
+
+var VersionPrerelease = version.Prerelease
