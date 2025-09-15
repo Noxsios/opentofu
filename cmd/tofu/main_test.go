@@ -132,7 +132,7 @@ func TestMain_cliArgsFromEnv(t *testing.T) {
 			// Run it!
 			os.Args = args
 			testCommand.Args = nil
-			exit := realMain()
+			exit := RealMain()
 			if (exit != 0) != tc.Err {
 				t.Fatalf("bad: %d", exit)
 			}
@@ -234,7 +234,7 @@ func TestMain_cliArgsFromEnvAdvanced(t *testing.T) {
 			// Run it!
 			os.Args = args
 			testCommand.Args = nil
-			exit := realMain()
+			exit := RealMain()
 			if (exit != 0) != tc.Err {
 				t.Fatalf("unexpected exit status %d; want 0", exit)
 			}
@@ -271,7 +271,7 @@ func TestMain_autoComplete(t *testing.T) {
 
 	// Run it!
 	os.Args = []string{"tofu", "tofu", "versio"}
-	exit := realMain()
+	exit := RealMain()
 	if exit != 0 {
 		t.Fatalf("unexpected exit status %d; want 0", exit)
 	}

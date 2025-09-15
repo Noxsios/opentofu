@@ -65,10 +65,10 @@ func init() {
 }
 
 func main() {
-	os.Exit(realMain())
+	os.Exit(RealMain())
 }
 
-func realMain() int {
+func RealMain() int {
 	defer logging.PanicHandler()
 
 	// Create a go CPU profile if requested
