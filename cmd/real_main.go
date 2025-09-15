@@ -64,10 +64,6 @@ func init() {
 	}}
 }
 
-func main() {
-	os.Exit(RealMain())
-}
-
 func RealMain() int {
 	defer logging.PanicHandler()
 
